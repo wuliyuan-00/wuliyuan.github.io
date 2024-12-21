@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="个人学术主页 - 法学专业">
-    <title>个人学术主页 - 法律人才</title>
+    <meta name="description" content="法律专业个人主页">
+    <title>个人学术主页 - 法律专业</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -12,10 +12,15 @@
             margin: 0;
             padding: 20px;
             color: #333;
+            background-color: #f9f9f9;
         }
         #layout-content {
             max-width: 1000px;
             margin: 25px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .header-table {
             width: 100%;
@@ -29,6 +34,7 @@
         }
         .section {
             margin: 30px 0;
+            padding-bottom: 20px;
         }
         h1 {
             font-size: 2.5em;
@@ -39,15 +45,18 @@
             color: #2c3e50;
             border-bottom: 2px solid #eee;
             padding-bottom: 5px;
+            margin-top: 30px;
         }
         h3 {
             color: #34495e;
+            margin-top: 20px;
         }
         .award-item {
-            margin: 10px 0;
-            padding: 10px;
+            margin: 15px 0;
+            padding: 15px;
             background: #f8f9fa;
             border-radius: 5px;
+            border-left: 4px solid #3498db;
         }
         .contact-info {
             margin: 20px 0;
@@ -63,22 +72,24 @@
             font-size: 1.1em;
             line-height: 1.8;
         }
-        .timeline {
-            margin: 20px 0;
-        }
         .timeline-item {
             padding: 10px 0;
-            border-left: 2px solid #3498db;
-            margin-left: 20px;
+            margin: 10px 0;
+        }
+        .timeline-list {
+            list-style-type: none;
             padding-left: 20px;
         }
-        .skill-tag {
-            display: inline-block;
-            padding: 5px 10px;
-            margin: 5px;
-            background: #e1f0fa;
-            border-radius: 3px;
-            font-size: 0.9em;
+        .timeline-list li {
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .timeline-list li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
         }
     </style>
 </head>
@@ -104,11 +115,32 @@
 
         <div class="section">
             <h2>教育背景</h2>
-            <div class="timeline-item">
-                <p><strong>2017.9 - 2021</strong> 广西大学法学院法学专业</p>
-                <p>• 学习成绩：加权平均学分绩点3.53（3/54），2020年加权平均分85.96</p>
-                <p>• 专业排名：3/54</p>
+            <div class="award-item">
+                <h3>广西大学法学院（2017.9 - 2021）</h3>
+                <p>• 专业：法学</p>
+                <p>• 学习成绩：加权平均学分绩点3.53</p>
+                <p>• 专业排名：4/39</p>
+                <p>• 2020年加权平均分85.96，单科成绩均大于80分</p>
+                <p>• 无补考缓考记录</p>
                 <p>• 英语能力：通过英语六级考试（2018年）</p>
+            </div>
+            
+            <div class="award-item">
+                <h3>专业课程</h3>
+                <p><strong>主修课程：</strong></p>
+                <p>宪法、行政法、民法、刑法、经济法、商法、国际法、法理学、法哲学、法史、诉讼法等核心法学课程</p>
+                <p><strong>辅修课程：</strong></p>
+                <p>刑事侦查学、证券法学等</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>毕业论文</h2>
+            <div class="award-item">
+                <h3>《民法典》视域下动产融资担保制度研究</h3>
+                <p class="bio-text">
+                    本文结合民法典元年和疫情背景下中小微民营企业融资困境，探讨动产担保制度的创新与完善。通过对浙江温州1857家中小微企业动产抵押登记信息的分析，预测了民法典实施后动产融资担保的发展趋势：企业选择率逐年攀升、融资租赁优于银行借贷、浮动担保比例提升、登记规范化、融资额度增长。论文就构建数字化透明化动产融资担保体系提出了完善建议。
+                </p>
             </div>
         </div>
 
@@ -117,72 +149,69 @@
             <div class="award-item">
                 <p>• 法律职业资格证（2021年1月通过）</p>
                 <p>• 证券从业资格证（2019年9月通过）</p>
+                <p>• 英语六级证书（2018年通过）</p>
             </div>
         </div>
 
         <div class="section">
-            <h2>主要荣誉</h2>
+            <h2>荣誉奖项</h2>
             <div class="award-item">
                 <h3>奖学金与荣誉称号</h3>
-                <p>• 国家励志奖学金（2019-2020连续两年）</p>
+                <p>• 国家励志奖学金（2019年、2020年）</p>
+                <p>• 2021年广西大学优秀团员</p>
                 <p>• 2021年法考"冠律学金"</p>
-                <p>• 2021年校级"优秀团员"</p>
                 <p>• 2020年度团员民主评议优秀等次</p>
             </div>
+            
             <div class="award-item">
                 <h3>竞赛获奖</h3>
-                <p>• 作品《逐梦选调，热血难凉》荣获2019年"壮丽70年筑梦新时代"优秀调研报告二等奖及大学生微视频大赛二等奖</p>
+                <p>• 2019年"壮丽70年筑梦新时代"大学生微视频大赛暨优秀调研报告二等奖</p>
+                <p>• 2019年"大学生创新创业训练计划"省级研究项目优秀奖</p>
+                <p>• 2019年第五届"互联网+"大学生创新创业大赛校级选拔赛银奖</p>
                 <p>• "外研社杯"全国英语阅读写作大赛二等奖（2017-2019连续三年）</p>
                 <p>• "外研社国才杯"全国英语写作大赛二等奖（2018-2019）</p>
-                <p>• 第五届"互联网+"大学生创新创业大赛校级选拔赛银奖、铜奖（2019）</p>
-                <p>• 2019年"大学生创新创业训练计划"省级研究项目优秀奖</p>
                 <p>• 第三、四届全国大学生防艾滋病知识竞赛优秀奖</p>
-            </div>
-            <div class="award-item">
-                <h3>资格证书</h3>
-                <p>• 法律职业资格证（2021年1月）</p>
-                <p>• 证券从业资格证（2019年9月）</p>
-                <p>• 英语六级证书（2018年）</p>
-            </div>
             </div>
         </div>
 
         <div class="section">
             <h2>社会实践经历</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>法律援助工作</h3>
-                    <p>2018.3-2020.5 广西大学法律援助中心新网部副部长</p>
-                    <p>• 累计法律援助咨询服务80小时</p>
-                    <p>• 接待当事人出具法律意见书30余起</p>
-                    <p>• 参与宪法、消费者权益保护法、劳动法等公益普法14次</p>
-                    <p>• 参加南宁市司法局、广西律师行业协会的村（居）村委会法律顾问培训会</p>
-                    <p>• 以"铁肩担道义，硬笔述公心"为指南导向，服务社会</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>实习经历</h3>
-                    <p>• 2019.7-2019.8 广西东方意远律师事务所，律师助理</p>
-                    <p>• 2020.3-2020.6 湖南金戈新材料有限公司，综合办公室与保密组助理</p>
-                    <p>• 2021.1-2021.3 广西金卡律师事务所，律师助理</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>志愿服务经历</h3>
-                    <p>• 全国注册志愿者（2018.3.25至今）</p>
-                    <p>• 参与组织：</p>
-                    <p>  - 广西大学绿色环保协会</p>
-                    <p>  - 华强街道新时代文明实践志愿服务队</p>
-                    <p>  - 西乡塘区华强街道青空间志愿服务分队</p>
-                    <p>• 志愿服务项目：</p>
-                    <p>  - 华强街道爱心家教活动（2019.3-2019.6）</p>
-                    <p>  - 邕江母亲河保护志愿活动（2019.11）</p>
-                    <p>  - 广西大学新生接待志愿活动（2019）</p>
-                    <p>  - 防范校园贷及劳动法普法活动（2019.5.11）</p>
-                    <p>  - 关爱农民工子女普法活动（2019.4.22）</p>
-                    <p>  - 消费者权益保护法普法活动（2019.5.27）</p>
-                    <p>  - 宪法普法宣传活动（2019）</p>
-                    <p>  - 幕天公益捐赠书籍及助力武汉抗疫情活动（2020.2）</p>
-                    <p>• 累计志愿服务时长71小时</p>
-                </div>
+            <div class="award-item">
+                <h3>法律援助工作</h3>
+                <p>2018.3-2020.5 广西大学法律援助中心新网部副部长</p>
+                <p>• 累计法律援助咨询服务80小时</p>
+                <p>• 接待当事人出具法律意见书30余起</p>
+                <p>• 参与宪法、消费者权益保护法、劳动法等公益普法14次</p>
+                <p>• 参加南宁市司法局、广西律师行业协会的村（居）村委会法律顾问培训会</p>
+            </div>
+
+            <div class="award-item">
+                <h3>实习经历</h3>
+                <p>• 2019.7-2019.8 广西东方意远律师事务所，律师助理</p>
+                <p>• 2020.3-2020.6 湖南金戈新材料有限公司，综合办公室与保密组助理</p>
+                <p>• 2021.1-2021.3 广西金卡律师事务所，律师助理</p>
+            </div>
+
+            <div class="award-item">
+                <h3>志愿服务经历</h3>
+                <p>• 全国注册志愿者（2018.3.25至今）</p>
+                <p>• 志愿服务组织：</p>
+                <ul class="timeline-list">
+                    <li>广西大学绿色环保协会</li>
+                    <li>华强街道新时代文明实践志愿服务队</li>
+                    <li>西乡塘区华强街道青空间志愿服务分队</li>
+                </ul>
+                <p>• 主要志愿活动：</p>
+                <ul class="timeline-list">
+                    <li>华强街道爱心家教活动（2019.3-2019.6）</li>
+                    <li>邕江母亲河保护志愿活动（2019.11）</li>
+                    <li>防范校园贷及劳动法普法活动（2019.5.11）</li>
+                    <li>关爱农民工子女普法活动（2019.4.22）</li>
+                    <li>消费者权益保护法普法活动（2019.5.27）</li>
+                    <li>宪法普法宣传活动（2019）</li>
+                    <li>幕天公益捐赠书籍及助力武汉抗疫情活动（2020.2）</li>
+                </ul>
+                <p>• 累计志愿服务时长71小时</p>
             </div>
         </div>
 
@@ -190,18 +219,20 @@
             <h2>学生工作</h2>
             <div class="award-item">
                 <h3>担任职务</h3>
-                <p>• 广西大学学生会学术部干事长</p>
                 <p>• 法学院172班团支部组织委员</p>
+                <p>• 广西大学学生会学术部干事长</p>
                 <p>• 法律援助中心新网部副部长（2019.4-2020.5）</p>
                 <p>• 绿色环保协会副会长</p>
             </div>
+
             <div class="award-item">
                 <h3>工作成果</h3>
                 <p>• 组织策划"我心目中的好老师颁奖活动"（2019）</p>
                 <p>• 组织"海洋知识竞赛"等全校性大型活动</p>
                 <p>• 积极参加"三会两制一课"和团的活动</p>
                 <p>• 青年大学习参与率100%</p>
-                <p>• 2020年度团员民主评议获得优秀等次</p>
+                <p>• 作为组织委员，积极配合其他班干部组织班级活动</p>
+                <p>• 帮助有困难的同学，发挥模范带头作用</p>
             </div>
         </div>
 
@@ -209,9 +240,11 @@
             <h2>政治面貌</h2>
             <div class="timeline-item">
                 <p>中国共产党党员</p>
-                <p>• 2018.10-2018.12 入党积极分子培训班结业</p>
-                <p>• 2020.5-2020.6 发展对象培训班结业</p>
-                <p>• 2020.11-2020.12 预备党员培训班结业</p>
+                <ul class="timeline-list">
+                    <li>2018.10-2018.12 入党积极分子培训班结业</li>
+                    <li>2020.5-2020.6 发展对象培训班结业</li>
+                    <li>2020.11-2020.12 预备党员培训班结业</li>
+                </ul>
             </div>
         </div>
     </div>
