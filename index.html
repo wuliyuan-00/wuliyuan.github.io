@@ -1,179 +1,129 @@
 <!DOCTYPE html>
-<!-- 声明文档类型为HTML5 -->
 <html lang="zh">
 <head>
-    <!-- 设置文档的基本元数据 -->
-    <meta charset="UTF-8"> <!-- 使用UTF-8字符编码，支持中文显示 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式设计，适配移动设备 -->
-    <meta name="description" content="Multilingual Professional Portfolio"> <!-- 网页描述，用于SEO -->
-    <title>Academic and Professional Experience</title> <!-- 网页标题 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Multilingual Professional Portfolio">
+    <title>Academic and Professional Experience</title>
     <style>
-        /* 全局样式设置 */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* 设置系统字体优先级 */
-            line-height: 1.6; /* 行高为字体大小的1.6倍，提高可读性 */
-            margin: 0; /* 清除body默认外边距 */
-            padding: 20px; /* 设置内边距 */
-            color: #333; /* 设置文字颜色为深灰色 */
-            background-color: #f9f9f9; /* 设置背景色为浅灰色 */
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            background-color: #f9f9f9;
         }
-
-        /* 内容布局容器样式 */
         #layout-content {
-            max-width: 1000px; /* 限制最大宽度 */
-            margin: 25px auto; /* 水平居中 */
-            background-color: white; /* 设置背景色为白色 */
-            padding: 30px; /* 设置内边距 */
-            border-radius: 8px; /* 圆角边框 */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 添加阴影效果 */
+            max-width: 1000px;
+            margin: 25px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-
-        /* 语言部分样式 */
         .language-section {
-            margin-bottom: 50px; /* 底部外边距 */
-            padding-bottom: 50px; /* 底部内边距 */
-            border-bottom: 3px solid #eee; /* 底部边框 */
+            margin-bottom: 50px;
+            padding-bottom: 50px;
+            border-bottom: 3px solid #eee;
         }
-        
-        /* 最后一个语言部分取消底部边框 */
         .language-section:last-of-type {
             border-bottom: none;
         }
-
-        /* 语言标题样式 */
         .language-title {
-            text-align: center; /* 文字居中 */
-            font-size: 2em; /* 字体大小 */
-            color: #2c3e50; /* 文字颜色 */
-            margin: 40px 0; /* 上下外边距 */
-            padding-bottom: 10px; /* 底部内边距 */
-            border-bottom: 3px solid #3498db; /* 蓝色底部边框 */
+            text-align: center;
+            font-size: 2em;
+            color: #2c3e50;
+            margin: 40px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
         }
-
-        /* 头部表格样式 */
         .header-table {
-            width: 100%; /* 宽度占满容器 */
-            margin-bottom: 30px; /* 底部外边距 */
+            width: 100%;
+            margin-bottom: 30px;
         }
-
-        /* 头部信息样式 */
         .header-info {
-            padding-right: 30px; /* 右侧内边距 */
+            padding-right: 30px;
         }
-
-        /* 照片单元格样式 */
         .photo-cell {
-            width: 200px; /* 固定宽度 */
+            width: 200px;
         }
-
-        /* 各部分样式 */
         .section {
-            margin: 30px 0; /* 上下外边距 */
-            padding-bottom: 20px; /* 底部内边距 */
+            margin: 30px 0;
+            padding-bottom: 20px;
         }
-
-        /* 一级标题样式 */
         h1 {
-            font-size: 2.5em; /* 字体大小 */
-            margin-bottom: 10px; /* 底部外边距 */
-            color: #2c3e50; /* 文字颜色 */
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
         }
-
-        /* 二级标题样式 */
         h2 {
-            color: #2c3e50; /* 文字颜色 */
-            border-bottom: 2px solid #eee; /* 底部边框 */
-            padding-bottom: 5px; /* 底部内边距 */
-            margin-top: 30px; /* 顶部外边距 */
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 30px;
         }
-
-        /* 三级标题样式 */
         h3 {
-            color: #34495e; /* 文字颜色 */
-            margin-top: 20px; /* 顶部外边距 */
+            color: #34495e;
+            margin-top: 20px;
         }
-
-        /* 奖项条目样式 */
         .award-item {
-            margin: 15px 0; /* 上下外边距 */
-            padding: 15px; /* 内边距 */
-            background: #f8f9fa; /* 背景色 */
-            border-radius: 5px; /* 圆角 */
-            border-left: 4px solid #3498db; /* 左侧蓝色边框 */
+            margin: 15px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
         }
-
-        /* 联系信息样式 */
         .contact-info {
-            margin: 20px 0; /* 上下外边距 */
+            margin: 20px 0;
         }
-
-        /* 联系信息链接样式 */
         .contact-info a {
-            color: #3498db; /* 链接颜色 */
-            text-decoration: none; /* 去除下划线 */
+            color: #3498db;
+            text-decoration: none;
         }
-
-        /* 联系信息链接悬停效果 */
         .contact-info a:hover {
-            text-decoration: underline; /* 添加下划线 */
+            text-decoration: underline;
         }
-
-        /* 简介文本样式 */
         .bio-text {
-            font-size: 1.1em; /* 字体大小 */
-            line-height: 1.8; /* 行高 */
+            font-size: 1.1em;
+            line-height: 1.8;
         }
-
-        /* 时间线条目样式 */
         .timeline-item {
-            padding: 10px 0; /* 上下内边距 */
-            margin: 10px 0; /* 上下外边距 */
+            padding: 10px 0;
+            margin: 10px 0;
         }
-
-        /* 时间线列表样式 */
         .timeline-list {
-            list-style-type: none; /* 去除默认列表样式 */
-            padding-left: 20px; /* 左侧内边距 */
+            list-style-type: none;
+            padding-left: 20px;
         }
-
-        /* 时间线列表项样式 */
         .timeline-list li {
-            position: relative; /* 相对定位 */
-            margin-bottom: 10px; /* 底部外边距 */
+            position: relative;
+            margin-bottom: 10px;
         }
-
-        /* 时间线列表项前的圆点样式 */
         .timeline-list li:before {
-            content: "•"; /* 添加圆点 */
-            color: #3498db; /* 圆点颜色 */
-            font-weight: bold; /* 加粗 */
-            position: absolute; /* 绝对定位 */
-            left: -15px; /* 左侧偏移 */
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
         }
-
-        /* GitHub统计部分样式 */
         .github-stats {
-            text-align: center; /* 文字居中 */
-            margin-top: 50px; /* 顶部外边距 */
-            padding-top: 30px; /* 顶部内边距 */
-            border-top: 3px solid #eee; /* 顶部边框 */
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #eee;
         }
     </style>
 </head>
 <body>
-    <!-- 主要内容容器 -->
     <div id="layout-content">
-        <!-- 英文部分 -->
+        <!-- English Section -->
         <div class="language-section">
-            <!-- 标题 -->
             <h1 class="language-title">Academic and Professional Experience</h1>
-            
-            <!-- 个人信息表格 -->
             <table class="header-table">
                 <tr>
                     <td class="header-info">
                         <div class="contact-info">
-                            <!-- 基本信息列表 -->
                             <p>School of Law, Guangxi University (Project 211 University)</p>
                             <p>Current Location: Changsha, Hunan</p>
                             <p>Member of the Communist Party of China</p>
@@ -181,17 +131,14 @@
                             <p>GitHub: <a href="https://github.com/wuliyuan-00">https://github.com/wuliyuan-00</a></p>
                         </div>
                     </td>
-                    <!-- 照片单元格 -->
                     <td class="photo-cell">
                         <img src="files/person_photo.jpg" alt="Personal Photo" width="150" style="border-radius: 5px;">
                     </td>
                 </tr>
             </table>
 
-            <!-- 教育背景部分 -->
             <div class="section">
                 <h2>Education</h2>
-                <!-- 学历信息 -->
                 <div class="award-item">
                     <h3>School of Law, Guangxi University (2017.9 - 2021)</h3>
                     <p>• Major: Law</p>
@@ -202,7 +149,6 @@
                     <p>• English Proficiency: CET-6 (2018)</p>
                 </div>
                 
-                <!-- 课程信息 -->
                 <div class="award-item">
                     <h3>Core Courses</h3>
                     <p><strong>Major Courses:</strong></p>
@@ -212,22 +158,442 @@
                 </div>
             </div>
 
-            <!-- 后续部分结构类似，包含毕业论文、专业资格、荣誉奖项、实践经验、学生工作和政治面貌等部分... -->
-            
+            <div class="section">
+                <h2>Graduation Thesis</h2>
+                <div class="award-item">
+                    <h3>Research on Movable Property Financing Guarantee System under Civil Code</h3>
+                    <p class="bio-text">
+                        This thesis examines the innovation and improvement of movable property guarantee system in the context of the Civil Code and pandemic-affected small and micro enterprises. Through analyzing registration data of 1,857 SMEs in Wenzhou, Zhejiang, it predicts development trends in movable property financing guarantees following the Civil Code implementation. The research proposes recommendations for building a digital and transparent movable property financing guarantee system.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Professional Qualifications</h2>
+                <div class="award-item">
+                    <p>• Legal Professional Qualification (January 2021)</p>
+                    <p>• Securities Practitioner Qualification (September 2019)</p>
+                    <p>• CET-6 Certificate (2018)</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Honors & Awards</h2>
+                <div class="award-item">
+                    <h3>Scholarships & Honors</h3>
+                    <p>• National Inspirational Scholarship (2019, 2020)</p>
+                    <p>• Outstanding Youth League Member of Guangxi University (2021)</p>
+                    <p>• Legal Professional Qualification "Crown Scholarship" (2021)</p>
+                    <p>• Outstanding Youth League Member Evaluation (2020)</p>
+                </div>
+                
+                <div class="award-item">
+                    <h3>Competition Awards</h3>
+                    <p>• Second Prize, "Glory of 70 Years, Dream of New Era" University Student Micro-video Contest and Outstanding Research Report (2019)</p>
+                    <p>• Excellence Award, Provincial College Students' Innovation and Entrepreneurship Training Program (2019)</p>
+                    <p>• Silver Award, 5th "Internet+" College Student Innovation and Entrepreneurship Competition (2019)</p>
+                    <p>• Second Prize, FLTRP Cup National English Reading Contest (2017-2019 consecutive three years)</p>
+                    <p>• Second Prize, FLTRP "ETIC Cup" National English Writing Competition (2018-2019)</p>
+                    <p>• Excellence Award, 3rd and 4th National College Student AIDS Prevention Knowledge Competition</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Practical Experience</h2>
+                <div class="award-item">
+                    <h3>Legal Aid Work</h3>
+                    <p>Deputy Director, New Media Department, Guangxi University Legal Aid Center (2018.3-2020.5)</p>
+                    <p>• Accumulated 80 hours of legal consultation service</p>
+                    <p>• Provided legal opinions for over 30 cases</p>
+                    <p>• Conducted 14 public legal education sessions on Constitution, Consumer Protection Law, and Labor Law</p>
+                    <p>• Participated in legal advisor training by Nanning Justice Bureau and Guangxi Lawyers Association</p>
+                </div>
+
+                <div class="award-item">
+                    <h3>Internship Experience</h3>
+                    <p>• Legal Assistant, Guangxi Dongfang Yiyuan Law Firm (2019.7-2019.8)</p>
+                    <p>• Administrative Assistant, Hunan Jinge New Materials Co., Ltd. (2020.3-2020.6)</p>
+                    <p>• Legal Assistant, Guangxi Jinka Law Firm (2021.1-2021.3)</p>
+                </div>
+
+                <div class="award-item">
+                    <h3>Volunteer Service</h3>
+                    <p>• Registered National Volunteer (Since 2018.3.25)</p>
+                    <p>• Volunteer Organizations:</p>
+                    <ul class="timeline-list">
+                        <li>Guangxi University Environmental Protection Association</li>
+                        <li>Huaqiang Street New Era Civilization Practice Volunteer Service Team</li>
+                        <li>Xiangtan District Huaqiang Street Youth Space Volunteer Service Team</li>
+                    </ul>
+                    <p>• Major Volunteer Activities:</p>
+                    <ul class="timeline-list">
+                        <li>Huaqiang Street Tutoring Program (2019.3-2019.6)</li>
+                        <li>Yongjiang River Protection Campaign (2019.11)</li>
+                        <li>Campus Loan Prevention and Labor Law Education (2019.5.11)</li>
+                        <li>Migrant Workers' Children Care Program (2019.4.22)</li>
+                        <li>Consumer Rights Protection Law Education (2019.5.27)</li>
+                        <li>Constitutional Law Education Campaign (2019)</li>
+                        <li>Book Donation and Wuhan Pandemic Support Campaign (2020.2)</li>
+                    </ul>
+                    <p>• Total Volunteer Service Hours: 71</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Student Leadership</h2>
+                <div class="award-item">
+                    <h3>Leadership Positions</h3>
+                    <p>• Organization Committee Member, Law School Youth League Branch</p>
+                    <p>• Director, Academic Department of Student Union</p>
+                    <p>• Deputy Director, New Media Department of Legal Aid Center (2019.4-2020.5)</p>
+                    <p>• Vice President, Environmental Protection Association</p>
+                </div>
+
+                <div class="award-item">
+                    <h3>Achievements</h3>
+                    <p>• Organized "My Favorite Teacher Award Ceremony" (2019)</p>
+                    <p>• Coordinated university-wide "Ocean Knowledge Competition"</p>
+                    <p>• Active participation in Youth League activities</p>
+                    <p>• 100% participation rate in Youth Learning program</p>
+                    <p>• Actively supported class activities as Organization Committee Member</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Political Status</h2>
+                <div class="timeline-item">
+                    <p>Member of the Communist Party of China</p>
+                    <ul class="timeline-list">
+                        <li>Party Activist Training Completion (2018.10-2018.12)</li>
+                        <li>Development Target Training Completion (2020.5-2020.6)</li>
+                        <li>Probationary Party Member Training Completion (2020.11-2020.12)</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <!-- 日文部分和中文部分结构相似，仅内容和语言不同 -->
-        
-        <!-- GitHub统计部分 -->
+
+        <!-- Japanese Section -->
+    
+        <div class="language-section" style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <h1 class="language-title">学術・職歴経歴書</h1>
+            <table class="header-table">
+                <tr>
+                    <td class="header-info">
+                        <div class="contact-info">
+                            <p>広西大学法学院（211重点大学）</p>
+                            <p>現住所：湖南省長沙市</p>
+                            <p>中国共産党党員</p>
+                            <p>メール：<a href="mailto:wuliyuan00@gmail.com">wuliyuan00@gmail.com</a></p>
+                            <p>GitHub: <a href="https://github.com/wuliyuan-00">https://github.com/wuliyuan-00</a></p>
+                        </div>
+                    </td>
+                    <td class="photo-cell">
+                        <img src="files/person_photo.jpg" alt="証明写真" width="150" style="border-radius: 5px;">
+                    </td>
+                </tr>
+            </table>
+
+            <div class="section">
+                <h2>学歴</h2>
+                <div class="award-item">
+                    <h3>広西大学法学院（2017年9月 - 2021年）</h3>
+                    <p>• 専攻：法学</p>
+                    <p>• 学業成績：GPA 3.53/4.0</p>
+                    <p>• 専攻内順位：4/39位</p>
+                    <p>• 加重平均点：85.96点、全科目80点以上</p>
+                    <p>• 追試・再試験歴なし</p>
+                    <p>• 英語能力：大学英語六級試験合格（2018年）</p>
+                </div>
+                
+                <div class="award-item">
+                    <h3>履修科目</h3>
+                    <p><strong>主要科目：</strong></p>
+                    <p>憲法、行政法、民法、刑法、経済法、商法、国際法、法理学、法哲学、法制史、訴訟法等の法学基幹科目</p>
+                    <p><strong>選択科目：</strong></p>
+                    <p>刑事捜査学、証券法等</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>卒業論文</h2>
+                <div class="award-item">
+                    <h3>『民法典』における動産融資担保制度の研究</h3>
+                    <p class="bio-text">
+                        民法典施行初年度及びパンデミック下における中小零細企業の資金調達問題を背景に、動産担保制度の革新と改善について考察。浙江省温州市の1,857社の中小零細企業の動産抵当登記データを分析し、民法典施行後の動産融資担保の発展傾向を予測：企業選択率の年次上昇、リース融資の銀行融資への優位性、変動担保比率の向上、登記の規範化、融資限度額の増加。デジタル化・透明化された動産融資担保体系の構築に関する提言を行った。
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>資格免許</h2>
+                <div class="award-item">
+                    <p>• 法律職業資格（2021年1月取得）</p>
+                    <p>• 証券従業資格（2019年9月取得）</p>
+                    <p>• 大学英語六級証書（2018年取得）</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>受賞歴・表彰</h2>
+                <div class="award-item">
+                    <h3>奨学金・表彰</h3>
+                    <p>• 国家励志奨学金（2019年度、2020年度）</p>
+                    <p>• 広西大学優秀団員（2021年）</p>
+                    <p>• 法律職業資格試験優秀者奨学金（2021年）</p>
+                    <p>• 優秀団員評価（2020年度）</p>
+                </div>
+                
+                <div class="award-item">
+                    <h3>コンテスト受賞歴</h3>
+                    <p>• 「輝かしい70年、新時代の夢を築く」大学生マイクロビデオコンテスト・優秀調査報告 二等賞（2019年）</p>
+                    <p>• 大学生イノベーション・起業訓練計画 省級プロジェクト優秀賞（2019年）</p>
+                    <p>• 第5回「インターネット+」大学生イノベーション・起業大会 校級選抜銀賞（2019年）</p>
+                    <p>• 全国英語読解コンテスト 二等賞（2017年-2019年連続3年）</p>
+                    <p>• 全国英語作文コンテスト 二等賞（2018年-2019年）</p>
+                    <p>• 第3・4回全国大学生エイズ予防知識コンテスト 優秀賞</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>実務経験</h2>
+                <div class="award-item">
+                    <h3>法律支援活動</h3>
+                    <p>広西大学法律支援センター新メディア部副部長（2018年3月-2020年5月）</p>
+                    <p>• 法律相談サービス累計80時間</p>
+                    <p>• 法律意見書作成30件以上</p>
+                    <p>• 憲法、消費者保護法、労働法等の法律普及活動14回実施</p>
+                    <p>• 南寧市司法局、広西弁護士協会主催の村（居）委員会法律顧問研修参加</p>
+                </div>
+
+                <div class="award-item">
+                    <h3>インターンシップ経験</h3>
+                    <p>• 広西東方意遠法律事務所 法務アシスタント（2019年7月-8月）</p>
+                    <p>• 湖南金戈新材料有限公司 総務・機密保持部アシスタント（2020年3月-6月）</p>
+                    <p>• 広西金卡法律事務所 法務アシスタント（2021年1月-3月）</p>
+                </div>
+
+                <div class="award-item">
+                    <h3>ボランティア活動</h3>
+                    <p>• 全国登録ボランティア（2018年3月25日～現在）</p>
+                    <p>• 所属団体：</p>
+                    <ul class="timeline-list">
+                        <li>広西大学環境保護協会</li>
+                        <li>華強街道新時代文明実践ボランティアサービスチーム</li>
+                        <li>西郷塘区華強街道青少年空間ボランティアサービスチーム</li>
+                    </ul>
+                    <p>• 主な活動：</p>
+                    <ul class="timeline-list">
+                        <li>華強街道家庭教育支援活動（2019年3月-6月）</li>
+                        <li>邕江母なる川保護活動（2019年11月）</li>
+                        <li>キャンパスローン防止・労働法教育活動（2019年5月11日）</li>
+                        <li>出稼ぎ労働者子女支援活動（2019年4月22日）</li>
+                        <li>消費者権利保護法教育活動（2019年5月27日）</li>
+                        <li>憲法普及啓発活動（2019年）</li>
+                        <li>武漢支援図書寄贈活動（2020年2月）</li>
+                    </ul>
+                    <p>• ボランティア活動総時間：71時間</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>学生活動</h2>
+                <div class="award-item">
+                    <h3>役職経験</h3>
+                    <p>• 法学院団支部組織委員</p>
+                    <p>• 広西大学学生会学術部部長</p>
+                    <p>• 法律支援センター新メディア部副部長（2019年4月-2020年5月）</p>
+                    <p>• 環境保護協会副会長</p>
+                </div>
+
+                <div class="award-item">
+                    <h3>活動実績</h3>
+                    <p>• 「私の好きな先生表彰式」企画運営（2019年）</p>
+                    <p>• 「海洋知識コンテスト」等の全学規模イベント運営</p>
+                    <p>• 共青団活動への積極的参加</p>
+                    <p>• 青年学習プログラム参加率100%</p>
+                    <p>• 組織委員としてクラス活動の企画・運営に貢献</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>政治所属</h2>
+                <div class="timeline-item">
+                    <p>中国共産党党員</p>
+                    <ul class="timeline-list">
+                        <li>入党積極分子研修修了（2018年10月-12月）</li>
+                        <li>発展対象者研修修了（2020年5月-6月）</li>
+                        <li>予備党員研修修了（2020年11月-12月）</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     
+
+        <!-- Chinese Section -->
+        <div class="language-section" style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <h1 class="language-title">学习工作履历</h1>
+            <table class="header-table">
+                <tr>
+                    <td class="header-info">
+                        <div class="contact-info">
+                            <p>广西大学法学院（211工程重点大学）</p>
+                            <p>现居地：湖南长沙</p>
+                            <p>中国共产党党员</p>
+                            <p>邮箱：<a href="mailto:wuliyuan00@gmail.com">wuliyuan00@gmail.com</a></p>
+                            <p>GitHub: <a href="https://github.com/wuliyuan-00">https://github.com/wuliyuan-00</a></p>
+                        </div>
+                    </td>
+                    <td class="photo-cell">
+                        <img src="files/person_photo.jpg" alt="个人照片" width="150" style="border-radius: 5px;">
+                    </td>
+                </tr>
+            </table>
+
+            <div class="section">
+                <h2>教育背景</h2>
+                <div class="award-item">
+                    <h3>广西大学法学院（2017.9 - 2021）</h3>
+                    <p>• 专业：法学</p>
+                    <p>• 学习成绩：加权平均学分绩点3.53/4</p>
+                    <p>• 专业排名：4/39</p>
+                    <p>• 加权平均分85.96，单科成绩均大于80分</p>
+                    <p>• 无补考缓考记录</p>
+                    <p>• 英语能力：通过英语六级考试（2018年）</p>
+                </div>
+                
+                <div class="award-item">
+                    <h3>专业课程</h3>
+                    <p><strong>主修课程：</strong></p>
+                    <p>宪法、行政法、民法、刑法、经济法、商法、国际法、法理学、法哲学、法史、诉讼法等核心法学课程</p>
+                    <p><strong>辅修课程：</strong></p>
+                    <p>刑事侦查学、证券法学等</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>毕业论文</h2>
+                <div class="award-item">
+                    <h3>《民法典》视域下动产融资担保制度研究</h3>
+                    <p class="bio-text">
+                        本文结合民法典元年和疫情背景下中小微民营企业融资困境，探讨动产担保制度的创新与完善。通过对浙江温州1857家中小微企业动产抵押登记信息的分析，预测了民法典实施后动产融资担保的发展趋势：企业选择率逐年攀升、融资租赁优于银行借贷、浮动担保比例提升、登记规范化、融资额度增长。论文就构建数字化透明化动产融资担保体系提出了完善建议。
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>专业资格</h2>
+                <div class="award-item">
+                    <p>• 法律职业资格证（2021年1月通过）</p>
+                    <p>• 证券从业资格证（2019年9月通过）</p>
+                    <p>• 英语六级证书（2018年通过）</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>荣誉奖项</h2>
+                <div class="award-item">
+                    <h3>奖学金与荣誉称号</h3>
+                    <p>• 国家励志奖学金（2019年、2020年）</p>
+                    <p>• 2021年广西大学优秀团员</p>
+                    <p>• 2021年法考"冠律学金"</p>
+                    <p>• 2020年度团员民主评议优秀等次</p>
+                </div>
+                
+                <div class="award-item">
+                    <h3>竞赛获奖</h3>
+                    <p>• 2019年"壮丽70年筑梦新时代"大学生微视频大赛暨优秀调研报告二等奖</p>
+                    <p>• 2019年"大学生创新创业训练计划"省级研究项目优秀奖</p>
+                    <p>• 2019年第五届"互联网+"大学生创新创业大赛校级选拔赛银奖</p>
+                    <p>• "外研社杯"全国英语阅读写作大赛二等奖（2017-2019连续三年）</p>
+                    <p>• "外研社国才杯"全国英语写作大赛二等奖（2018-2019）</p>
+                    <p>• 第三、四届全国大学生防艾滋病知识竞赛优秀奖</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>社会实践经历</h2>
+                <div class="award-item">
+                    <h3>法律援助工作</h3>
+                    <p>2018.3-2020.5 广西大学法律援助中心新网部副部长</p>
+                    <p>• 累计法律援助咨询服务80小时</p>
+                    <p>• 接待当事人出具法律意见书30余起</p>
+                    <p>• 参与宪法、消费者权益保护法、劳动法等公益普法14次</p>
+                    <p>• 参加南宁市司法局、广西律师行业协会的村（居）村委会法律顾问培训会</p>
+                </div>
+
+                <div class="award-item">
+                    <h3>实习经历</h3>
+                    <p>• 2019.7-2019.8 广西东方意远律师事务所，律师助理</p>
+                    <p>• 2020.3-2020.6 湖南金戈新材料有限公司，综合办公室与保密组助理</p>
+                    <p>• 2021.1-2021.3 广西金卡律师事务所，律师助理</p>
+                </div>
+
+                <div class="award-item">
+                    <h3>志愿服务经历</h3>
+                    <p>• 全国注册志愿者（2018.3.25至今）</p>
+                    <p>• 志愿服务组织：</p>
+                    <ul class="timeline-list">
+                        <li>广西大学绿色环保协会</li>
+                        <li>华强街道新时代文明实践志愿服务队</li>
+                        <li>西乡塘区华强街道青空间志愿服务分队</li>
+                    </ul>
+                    <p>• 主要志愿活动：</p>
+                    <ul class="timeline-list">
+                        <li>华强街道爱心家教活动（2019.3-2019.6）</li>
+                        <li>邕江母亲河保护志愿活动（2019.11）</li>
+                        <li>防范校园贷及劳动法普法活动（2019.5.11）</li>
+                        <li>关爱农民工子女普法活动（2019.4.22）</li>
+                        <li>消费者权益保护法普法活动（2019.5.27）</li>
+                        <li>宪法普法宣传活动（2019）</li>
+                        <li>幕天公益捐赠书籍及助力武汉抗疫情活动（2020.2）</li>
+                    </ul>
+                    <p>• 累计志愿服务时长71小时</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>学生工作</h2>
+                <div class="award-item">
+                    <h3>担任职务</h3>
+                    <p>• 法学院172班团支部组织委员</p>
+                    <p>• 广西大学学生会学术部干事长</p>
+                    <p>• 法律援助中心新网部副部长（2019.4-2020.5）</p>
+                    <p>• 绿色环保协会副会长</p>
+                </div>
+
+                <div class="award-item">
+                    <h3>工作成果</h3>
+                    <p>• 组织策划"我心目中的好老师颁奖活动"（2019）</p>
+                    <p>• 组织"海洋知识竞赛"等全校性大型活动</p>
+                    <p>• 积极参加"三会两制一课"和团的活动</p>
+                    <p>• 青年大学习参与率100%</p>
+                    <p>• 作为组织委员，积极配合其他班干部组织班级活动</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>政治面貌</h2>
+                <div class="timeline-item">
+                    <p>中国共产党党员</p>
+                    <ul class="timeline-list">
+                        <li>2018.10-2018.12 入党积极分子培训班结业</li>
+                        <li>2020.5-2020.6 发展对象培训班结业</li>
+                        <li>2020.11-2020.12 预备党员培训班结业</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single GitHub Stats Section at the bottom -->
         <div class="github-stats">
             <h2>GitHub Statistics</h2>
             <div class="award-item">
-                <!-- GitHub统计图表 -->
                 <img src="https://github-readme-stats.vercel.app/api?username=wuliyuan-00&hide=comments,commits&show_icons=true&title_color=2c86ea&icon_color=2c86ea&text_color=00c800&bg_color=00000000" alt="GitHub Stats" style="width: 100%; max-width: 500px; height: auto;">
-                <!-- 访问计数器 -->
                 <img src="https://visitor-badge.laobi.icu/badge?page_id=wuliyuan-00.wuliyuan-00" alt="visitors" style="margin-top: 10px;">
             </div>
         </div>
     </div>
 </body>
+</html>
 </html>
